@@ -96,7 +96,7 @@
                         android:drawablePadding="16dp"
                         android:hint="Password"
                         android:imeOptions="actionDone"
-                        android:inputType="text"
+                        android:inputType="textPassword"
                         android:maxLength="10"
                         android:text="@={signInViewModel.password}" />
 
