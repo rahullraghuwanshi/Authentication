@@ -13,4 +13,20 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="EditTextBackground" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/et_grey_bg</item>
+        <item name="android:backgroundTint">#555555</item>
+        <item name="android:textColorHint">#d0d0d0</item>
+        <item name="android:drawableTint" tools:targetApi="m">#d0d0d0</item>
+    </style>
+    <style name="TextBackground" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/et_grey_bg</item>
+        <item name="android:backgroundTint">#555555</item>
+        <item name="android:textColorHint">#d0d0d0</item>
+        <item name="android:drawableTint" tools:ignore="NewApi">#d0d0d0</item>
+    </style>
+
 </resources>
