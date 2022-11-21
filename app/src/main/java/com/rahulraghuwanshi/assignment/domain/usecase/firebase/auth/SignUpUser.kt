@@ -4,7 +4,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.rahulraghuwanshi.assignment.common.Resource
 import com.rahulraghuwanshi.assignment.domain.repository.AuthRepository
 
-class SigninUser(private val authRepository: AuthRepository) {
+class SignUpUser(private val authRepository: AuthRepository) {
     suspend fun execute(email: String, password: String): Resource<FirebaseUser> =
-        authRepository.signinUser(email, password)
+        authRepository.signupUser(email, password)
 }

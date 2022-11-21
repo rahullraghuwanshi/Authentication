@@ -3,12 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!--    <data>-->
-
-<!--        <variable-->
-<!--            name="signUpViewModel"-->
-<!--            type="com.assignment.taassignment.ui.fragment.auth.signup.SignUpViewModel" />-->
-<!--    </data>-->
+    <data>
+        <variable
+            name="signUpViewModel"
+            type="com.rahulraghuwanshi.assignment.presentation.fragment.signup.SignUpViewModel" />
+    </data>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -82,7 +81,8 @@
                         android:drawablePadding="16dp"
                         android:hint="Full Name"
                         android:imeOptions="actionNext"
-                        android:inputType="text" />
+                        android:inputType="text"
+                        android:text="@={signUpViewModel.fullName}"/>
 
                     <EditText
                         android:id="@+id/et_email"
@@ -94,7 +94,8 @@
                         android:drawablePadding="16dp"
                         android:hint="Email"
                         android:imeOptions="actionNext"
-                        android:inputType="textEmailAddress" />
+                        android:inputType="textEmailAddress"
+                        android:text="@={signUpViewModel.email}"/>
 
 
                     <EditText
@@ -108,7 +109,8 @@
                         android:hint="Password"
                         android:imeOptions="actionNext"
                         android:inputType="text"
-                        android:maxLength="10" />
+                        android:maxLength="10"
+                        android:text="@={signUpViewModel.password}"/>
 
                     <EditText
                         android:id="@+id/et_confirm_password"
@@ -121,7 +123,8 @@
                         android:hint="Confirm Password"
                         android:imeOptions="actionDone"
                         android:inputType="text"
-                        android:maxLength="10" />
+                        android:maxLength="10"
+                        android:text="@={signUpViewModel.confirmPassword}"/>
 
                     <Button
                         android:id="@+id/btn_next"
@@ -129,7 +132,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:text="Verify"
-                        android:textAllCaps="false" />
+                        android:textAllCaps="false"
+                        android:onClick="@{(v)->signUpViewModel.signUp(v)}"/>
 
                     <TextView
                         android:id="@+id/txt_register"
@@ -140,7 +144,8 @@
                         android:background="?attr/selectableItemBackground"
                         android:fontFamily="casual"
                         android:text="@string/already_have_an_acount_nlogin_here"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:onClick="@{(v)->signUpViewModel.navigateToSignIn(v)}"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
