@@ -1,5 +1,6 @@
 package com.rahulraghuwanshi.assignment.presentation.fragment.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,7 @@ import com.rahulraghuwanshi.assignment.data.repository.firebase.auth.AuthReposit
 import com.rahulraghuwanshi.assignment.data.repository.firebase.auth.datasourceImpl.FirebaseAuthSourceImpl
 import com.rahulraghuwanshi.assignment.databinding.FragmentHomeBinding
 import com.rahulraghuwanshi.assignment.domain.usecase.firebase.auth.CurrentUser
+import com.rahulraghuwanshi.assignment.presentation.BaseActivity
 import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
@@ -58,6 +60,12 @@ class HomeFragment : Fragment() {
 //            this,
 //            viewModelProviderFactory
 //        )[HomeViewModel::class.java]
+
+        binding.btnLogout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(activity,BaseActivity::class.java))
+            activity?.finish()
+        }
     }
 
     private fun navigateToLoginScreen() {
