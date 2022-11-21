@@ -3,12 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!--    <data>-->
-
-    <!--        <variable-->
-    <!--            name="signInViewModel"-->
-    <!--            type="com.assignment.taassignment.ui.fragment.auth.signin.SignInViewModel" />-->
-    <!--    </data>-->
+        <data>
+            <variable
+                name="signInViewModel"
+                type="com.rahulraghuwanshi.assignment.presentation.fragment.signin.SignInViewModel" />
+        </data>
 
     <ScrollView
         android:layout_width="match_parent"
