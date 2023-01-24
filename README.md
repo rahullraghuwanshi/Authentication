@@ -20,14 +20,4 @@
 </tr>
 </table>
 
-<table>
-<tr>
-<td><img src = "https://user-images.githubusercontent.com/52368582/192422038-ed19fbab-56e1-4e52-8afb-6bef37cac139.jpeg" width="300" height="600" ></td>
-</tr>
-
-<tr>
-<td align="center">SignUp Screen</td>
-</tr>
-</table>
-
 
