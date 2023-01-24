@@ -8,15 +8,15 @@
   ## Screenshots
 <table>
 <tr>
-<td> <img src = "https://user-images.githubusercontent.com/52368582/192424291-24f3ebf5-0bb0-41e2-bec1-cb04865d61f5.jpeg" width="300" height="600" ></td>
-<td><img src = "https://user-images.githubusercontent.com/52368582/192421981-f6dc3831-f5fe-4d30-b443-b6208172281b.jpeg" width="300" height="600" ></td>
-<td> <img src = "https://user-images.githubusercontent.com/52368582/192421996-32a55f7e-9f7f-4318-992e-afcb0e66aae7.jpeg" width="300" height="600" ></td>
+<td> <img src = "https://user-images.githubusercontent.com/52368582/214212148-85db5340-975c-4b9c-955a-283b58eda964.jpg" width="300" height="600" ></td>
+<td><img src = "https://user-images.githubusercontent.com/52368582/214212186-56d621c5-3227-4f4a-8c5e-64f25aac4ff6.jpg" width="300" height="600" ></td>
+<td> <img src = "https://user-images.githubusercontent.com/52368582/214212223-cda8cdce-96d3-407a-a13a-1d8e053a84a2.jpg" width="300" height="600" ></td>
 </tr>
 
 <tr>
-<td align="center">Dashboard Screen</td>
-<td align="center">Explore Screen</td>
-<td align="center">SignIn Screen</td>
+<td align="center">Sign Up Screen</td>
+<td align="center">Sign In Screen</td>
+<td align="center">Verification Screen</td>
 </tr>
 </table>
 
